@@ -1,6 +1,7 @@
 <?php
 /**
  * @package huhanlin
+ * 点击日历后展示的归档页面
  */
 ?>
 <?php get_header(); ?>
@@ -29,14 +30,25 @@
     <hr />
 		<?php while ( have_posts() ) : the_post(); ?>
       <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <time datetime="' . date('Y-m-d') . '" class="datehead"><?php the_time('F j, Y'); ?></time>
+        <!--<time datetime="' . date('Y-m-d') . '" class="datehead"><?php /*the_time('Y-m-d H:i:s'); */?></time>-->
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
         <div class="entry">
-          <?php the_excerpt(); ?>
+          <?php
+            the_excerpt();
+            echo '<time datetime="' . date('Y-m-d') . '" class="datehead">';
+            the_time('Y-m-d H:i:s');
+            echo ' | ';
+            _e('read','huhanlin');post_views('','');
+            echo ' | ';
+            $one =  sprintf( __('1 Comment' , 'huhanlin') );
+            $more = sprintf( __('Comments' , 'huhanlin') );
+            comments_popup_link($more, $one, '% '.$more);
+            echo '</time>';
+          ?>
         </div><!--.entry-->
-        <p class="postmetadata">
+        <!--<p class="postmetadata">
 					<?php
-						_e('Posted by ','huhanlin');
+/*						_e('Posted by ','huhanlin');
 						the_author_link(); 
 						_e(' in ','huhanlin');
 						the_category(', ');
@@ -48,8 +60,8 @@
 							comments_popup_link($more, $one, '% '.$more); 
 							echo '</span>';
 						}
-          ?>
-        </p>
+          */?>
+        </p>-->
       </article>
 	    <hr />
 		<?php endwhile; ?>

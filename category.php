@@ -1,6 +1,7 @@
 <?php
 /**
  * @package huhanlin
+ * 点击分类后展示的页面
  */
 ?>
 <?php get_header(); ?>
@@ -8,21 +9,31 @@
   <?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
   <div class="twelve columns alpha" role="main">
   <?php if ( have_posts() ) : ?>
-    <h1 id="archive-title"><?php 
+    <h1 id="archive-title"><?php
 			_e('Category Archives: ','huhanlin');
 			single_cat_title(); 
-		?></h1>  
+		?></h1>
     <?php while ( have_posts() ) : the_post(); ?>
       <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <time datetime="' . date('Y-m-d') . '" class="datehead"><?php the_time('F j, Y'); ?></time>
+       <!-- <time datetime="' . date('Y-m-d') . '" class="datehead"><?php /*the_time('Y-m-d H:i:s'); */?></time>-->
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
         <div class="entry">
           <?php 
-            the_excerpt(); 
+            the_excerpt();
+            echo '<time datetime="' . date('Y-m-d') . '" class="datehead">';
+            the_time('Y-m-d H:i:s');
+            echo ' | ';
+            _e('read','huhanlin');post_views('','');
+            echo ' | ';
+            $one =  sprintf( __('1 Comment' , 'huhanlin') );
+            $more = sprintf( __('Comments' , 'huhanlin') );
+            comments_popup_link($more, $one, '% '.$more);
+            echo '</time>';
           ?>
+
         </div><!--.entry-->
-        <p class="postmetadata"><?php 
-					_e('Posted by ','huhanlin');
+        <!--<p class="postmetadata"><?php
+/*				    _e('Posted by ','huhanlin');
 					the_author_link(); 
 					_e(' in ','huhanlin');
 					the_category(', '); 
@@ -34,7 +45,7 @@
 						comments_popup_link($more, $one, '% '.$more); 
 						echo '</span>';
 					}
-        ?></p>
+        */?></p>-->
       </article>
       <hr />
     <?php endwhile; ?>

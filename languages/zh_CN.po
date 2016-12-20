@@ -1,0 +1,226 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: huhanlin\n"
+"POT-Creation-Date: 2016-12-20 11:34+0800\n"
+"PO-Revision-Date: 2016-12-20 11:34+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:11
+msgid "Page Not Found"
+msgstr "此页面去火星了"
+
+#: 404.php:17
+msgid ""
+"We're sorry.  The page you were looking for could not be found.</"
+"p><p>Perhaps using the search form below would help?"
+msgstr ""
+"Sorry，未检索到您需要的内容，</p><p>或许您可以尝试使用以下表单再次检索"
+
+#: archive.php:15
+msgid "Daily Archives for "
+msgstr "日归档："
+
+#: archive.php:18
+msgid "Monthly Archives for "
+msgstr "月归档："
+
+#: archive.php:21 archive.php:24
+msgid "Yearly Archives for "
+msgstr "年归档："
+
+#: archive.php:26 sidebar.php:10
+msgid "Archives"
+msgstr "归档"
+
+#: archive.php:41 category.php:26 content.php:28
+msgid "read"
+msgstr "阅读:"
+
+#: archive.php:43 category.php:28 content.php:30
+msgid "1 Comment"
+msgstr "一条评论"
+
+#: archive.php:44 category.php:29 content.php:31
+msgid "Comments"
+msgstr "评论"
+
+#: category.php:13
+msgid "Category Archives: "
+msgstr "分类："
+
+#: category.php:53 content-none.php:6
+msgid "Not Found"
+msgstr "未找到"
+
+#: category.php:55
+msgid "We're sorry.  The posts you were looking for could not be found."
+msgstr "Sorry，未找到您检索的帖子。"
+
+#: category.php:56 content-none.php:9
+msgid "Perhaps using the search form below would help?"
+msgstr "或许您可以尝试使用以下表单再次检索"
+
+#: comments.php:15
+msgid "One Response"
+msgstr "响应"
+
+#: comments.php:16
+msgid "Responses"
+msgstr "响应"
+
+#: content-none.php:8
+msgid "We're sorry.  The page you were looking for could not be found."
+msgstr "We're sorry.  The posts you were looking for could not be found."
+
+#: content-page.php:14 content-single.php:15 page-nosidebar-notitle.php:19
+#: page-notitle.php:17
+msgid "Pages: "
+msgstr "页"
+
+#: content-page.php:20 page-nosidebar-notitle.php:25 page-notitle.php:23
+msgid "Edit This Page"
+msgstr "编辑此页"
+
+#: content-single.php:21
+msgid "Posted on <time datetime=\""
+msgstr "发布在 <time datetime=\""
+
+#: content-single.php:24
+msgid "</time> by "
+msgstr "</time> 由 "
+
+#: content-single.php:27
+msgid "Categories: "
+msgstr "分类"
+
+#: content-single.php:33
+msgid "Edit This Post"
+msgstr "编辑此页"
+
+#: footer.php:27
+msgid "Copyright &copy; "
+msgstr ""
+
+#: footer.php:30
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:35
+msgid "Posts navigation"
+msgstr "文章导航"
+
+#: functions.php:38
+msgid "Older posts"
+msgstr "稍早的文章"
+
+#: functions.php:41
+msgid "Newer posts"
+msgstr "最新的文章"
+
+#: functions.php:54
+msgid "Drag widget for the sidebar here"
+msgstr "拖动部件的侧边栏"
+
+#: functions.php:63
+msgid "Drag to create or update the sidebar for pages"
+msgstr "拖动到创建或更新网页的侧边栏"
+
+#: functions.php:107
+msgid "Main Menu"
+msgstr "主菜单"
+
+#: functions.php:108
+msgid "Footer Menu"
+msgstr "页脚菜单"
+
+#: functions.php:112 header.php:56
+msgid "Primary Menu"
+msgstr "首菜单"
+
+#: functions.php:118
+msgid "Pinwheel"
+msgstr ""
+
+#: functions.php:123
+msgid "Aqua Dancing Flower"
+msgstr ""
+
+#: functions.php:128
+msgid "Terra Dancing Flower"
+msgstr ""
+
+#: functions.php:171
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: header.php:18
+msgid "Skip to content"
+msgstr "跳至内容"
+
+#: page-private.php:21
+msgid "We're sorry"
+msgstr ""
+
+#: page-private.php:23
+msgid "You must be logged in to view this page."
+msgstr "你必须登录后查看此页面。"
+
+#: search.php:13
+msgid "Search Results for "
+msgstr "搜寻结果："
+
+#: searchform.php:7
+msgid "Enter keywords to search:"
+msgstr "输入关键字搜索："
+
+#: sidebar-page.php:7 sidebar.php:7
+msgid "Sidebar"
+msgstr ""
+
+#: sidebar-page.php:10
+msgid "Pages"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Meta"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#. Author of the plugin/theme
+msgid "huhanlin"
+msgstr "胡翰林"
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/hanlin5566/hanlinTheme.git"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Simple WordPress blog theme based on Underscores."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.huhanlin.com/"
+msgstr ""
+
+#~ msgid "Posted by "
+#~ msgstr "发布者"
+
+#~ msgid " in "
+#~ msgstr "在"

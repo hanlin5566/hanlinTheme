@@ -20,7 +20,7 @@
   <p class="postmetadata"><?php 
 		_e('Posted on <time datetime="','huhanlin');
 		echo date('Y-m-d') . '">'; 
-		the_time('F j, Y');
+		the_time('Y-m-d H:i:s');
 		_e('</time> by ','huhanlin');
 		the_author_link(); 
 		echo '<br />';
@@ -29,8 +29,8 @@
 		echo '<br />';
 		the_tags();
   ?></p>
-  <?php 
+  <?php
 		$editpost =  sprintf( __('Edit This Post' , 'huhanlin') );
-		edit_post_link($editpost, '<p class="button editlink">', '</p>'); 
+		edit_post_link($editpost, '<p class="button editlink">', '</p>');
 	?>
 </article>

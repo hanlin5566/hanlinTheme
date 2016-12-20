@@ -211,3 +211,32 @@ function huhanlin_my_request_filter( $query_vars ) {
     return $query_vars;
 }
 add_filter( 'request', 'huhanlin_my_request_filter' );
+
+function record_visitors()
+{
+    if (is_singular())
+    {
+        global $post;
+        $post_ID = $post->ID;
+        if($post_ID)
+        {
+            $post_views = (int)get_post_meta($post_ID, 'views', true);
+            if(!update_post_meta($post_ID, 'views', ($post_views+1)))
+            {
+                add_post_meta($post_ID, 'views', 1, true);
+            }
+        }
+    }
+}
+add_action('wp_head', 'record_visitors');
+
+/// 函数名称：post_views
+/// 函数作用：取得文章的阅读次数
+function post_views($before = '(click ', $after = ')', $echo = 1)
+{
+    global $post;
+    $post_ID = $post->ID;
+    $views = (int)get_post_meta($post_ID, 'views', true);
+    if ($echo) echo $before, number_format($views), $after;
+    else return $views;
+}

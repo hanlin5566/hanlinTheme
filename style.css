@@ -1,41 +1,11 @@
 /*
-Theme Name: A11Y'all
-Theme URI: http://www.a11yall.org/allyall-wordpress-theme/
-Author: Anna Belle Leiserson
-Author URI: http: //www.happywebdiva.com/
-Description: A custom responsive HTML5 WordPress starter theme, built from the ground up for accessibility (as part of of the Cities suite), SEO, simplicity, and elegance. It includes page templates and customizable menus, header image, widgets and background. 
-Version: 1.9.0
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: a11yall
-Domain Path: /languages/
-Tags: accessibility-ready, light, responsive-layout, custom-background, custom-header, custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
-
-The A11 Y'all Theme is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc., normalize.css v2.1.3, and Adobe's Accessible Mega Menu (http://adobe-accessibility.github.io/Accessible-Mega-Menu/). 
-
-It is designed to be a parent theme, making it easy to spread accessibility-ready child themes (http://www.a11yall.org/child-themes/).
-
-It supports the use of Yoast's SEO plugin (http://wordpress.org/plugins/wordpress-seo/) including his use of breadcrumb trails. 
-
-Currently it has five page templates:
-     1. Private Page Template (useful for "member-only" sections of the site)
-		 2. Page Without Title Template (useful for some landing pages)
-		 3. Page Without Sidebar Template
-		 4. Page Without Sidebar or Title Template (useful for some landing pages)
-		 5. Site Map Template (a simple alternative if you don't want to hand-build a site map for your site)
-
-Note that on small screens only the first and last menu items appear; consider making one of these "Site Map."  On large screens the menu levels are limited to two for accessibility reasons.
-
-CONTENTS BELOW
-
-1. Reset cross broswer 
-2. H5BP adjustments  
-3. CSS basics (a, strong, hr, etc.)
-4. Basic styling (fonts, vertical spacing between elements, etc.)
-5. Layout of columns, plus clearing
-6. Custom a11yall styling (backgrounds, block styling like nav & footer structure, WP-specific, etc.)
-7. Custom edia queries, including print
-
+Theme Name: huhanlin
+Theme URI:https://github.com/hanlin5566/hanlinTheme.git
+Author: huhanlin
+Author URI: http://www.huhanlin.com/
+Description: Simple WordPress blog theme based on Underscores.
+Version: 1.0.0
+Tags: black, blue, gray, white, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, full-width-template, sticky-post, translation-ready
 */
 
 /*** 1. Reset - normalize.css v2.1.3 | MIT License | git.io/normalize ***/
@@ -48,7 +18,7 @@ body { margin: 0;}
 a { background: transparent;}
 a:focus { outline: thin dotted;}
 a:active, a:hover { outline: 0;}
-h1 { font-size: 2em; margin: 0.67em 0;}
+h1 { font-size: 0.6em; margin: 0.67em 0;}
 abbr[title] { border-bottom: 1px dotted;}
 b, strong { font-weight: bold;}
 dfn { font-style: italic;}
@@ -167,12 +137,12 @@ body {background: #ddd;color: #444;font: 15px/21px "HelveticaNeue", "Helvetica N
 /* #Typography */
 h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0; color: #181818;font-weight: normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font-size: 42px; line-height: 49px; margin-bottom: 14px; }
-h2 { font-size: 35px; line-height: 42px; margin-bottom: 14px; }
-h3 { font-size: 28px; line-height: 35px; margin-bottom: 14px; }
-h4 { font-size: 21px; line-height: 28px; margin-bottom: 7px; }
-h5 { font-size: 14px; line-height: 21px; margin-bottom: 7px; }
-h6 { font-size: 14px; line-height: 21px; margin-bottom: 7px; }
+h1 { font-size: 15px; line-height: 15px; margin-bottom: 14px; }
+h2 { font-size: 13px; line-height: 13px; margin-bottom: 14px; }
+h3 { font-size: 12px; line-height: 35px; margin-bottom: 14px; }
+h4 { font-size: 11px; line-height: 28px; margin-bottom: 7px; }
+h5 { font-size: 10px; line-height: 21px; margin-bottom: 7px; }
+h6 { font-size: 9px; line-height: 21px; margin-bottom: 7px; }
 .subheader { color: #777; }
 p { margin: 0 0 14px 0; }
 p img { margin: 0; }
@@ -528,18 +498,19 @@ div#site-navigation ul.children { display: none;}
 /* Content */
 .section.middle .container { padding: 21px 0 35px 0;background: #f5f5f5; background: rgba(255, 255, 255, .9);}
 #main { -ms-word-wrap: break-word; word-wrap: break-word;}
-#main h1 { font-size: 32px; line-height: 35px; margin-left: 20px;}
-#main article h1 {margin-left:0;}
-#main h2 { font-size: 28px; line-height: 35px; }
-#main h3 { font-size: 26px;}
-#main table {margin: 10px 0 14px 0;font-size: .9em;}
+#main article h1 {margin-left:0;font-size: 30px}
+#main h1 { font-size: 25px; line-height: 35px; margin-left: 20px;}
+#main h2 { font-size: 20px; line-height: 35px; }
+#main h3 { font-size: 18px;}
+#main p { font-size: 13px; line-height: 20px; margin-left: 20px;}
+#main table {margin: 10px 0 14px 0;font-size: .6em;}
 #main table td {padding: 7px 10px;border: 1px solid #ccc;vertical-align: top;}
 #main table th {padding: 7px 10px;border: 1px solid #ccc;background: #eee;text-align: left;vertical-align: top;}
 p#breadcrumbs { margin: -21px -10px 21px -10px; padding: 6px 20px 7px 30px;background: #eee; background: rgba(0, 0, 0, .04); border-bottom: 1px solid #ddd; border-color: rgba(0,0,0,0.15);}
 .hentry {margin: 0 10px 14px 20px;}
 article.blurbing { padding: 21px 28px 14px 28px; background: #eee; background-color: rgba(0, 0, 0, .03);border: 1px solid #ddd;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-color: rgba(0,0,0,0.15);}
 article.sticky { background-image: url(img/star-circle.png); background-repeat: no-repeat; background-position: right top;}
-time.datehead { display: block; margin: 0 0 14px 20px; font-size: 21px; line-height: 35px;}
+time.datehead { display: block; margin: 0 0 14px 20px; font-size: 12px; line-height: 35px;float:right;}
 article time.datehead { margin-left: 0;}
 .page-links { margin: 28px 0; font-weight: bold;}
 .page-links a { padding: 6px 15px; border: 1px solid #ddd; background: #eee; text-decoration:none;}

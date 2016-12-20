@@ -16,8 +16,8 @@
 			) );
 		?>
   </div><!--.entry-->
-  <?php 
+  <?php
 		$editpage =  sprintf( __('Edit This Page' , 'huhanlin') );
-		edit_post_link($editpage, '<p class="button editlink">', '</p>'); 
+		edit_post_link($editpage, '<p class="button editlink">', '</p>');
 	?>
 </article>
