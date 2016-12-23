@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: huhanlin\n"
 "POT-Creation-Date: 2016-12-20 11:34+0800\n"
-"PO-Revision-Date: 2016-12-20 11:34+0800\n"
+"PO-Revision-Date: 2016-12-23 10:42+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -53,7 +53,7 @@ msgstr "阅读:"
 
 #: archive.php:43 category.php:28 content.php:30
 msgid "1 Comment"
-msgstr "一条评论"
+msgstr "1评论"
 
 #: archive.php:44 category.php:29 content.php:31
 msgid "Comments"
@@ -77,11 +77,11 @@ msgstr "或许您可以尝试使用以下表单再次检索"
 
 #: comments.php:15
 msgid "One Response"
-msgstr "响应"
+msgstr "评论"
 
 #: comments.php:16
 msgid "Responses"
-msgstr "响应"
+msgstr "评论"
 
 #: content-none.php:8
 msgid "We're sorry.  The page you were looking for could not be found."
@@ -106,7 +106,7 @@ msgstr "</time> 由 "
 
 #: content-single.php:27
 msgid "Categories: "
-msgstr "分类"
+msgstr "分类："
 
 #: content-single.php:33
 msgid "Edit This Post"

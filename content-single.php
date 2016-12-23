@@ -16,13 +16,20 @@
 				'after'  => '</p>',
 			) );
 		?>
-  </div><!--.entry-->
-  <p class="postmetadata"><?php 
+      <div class="posts-navigation">
+          <?php
+          previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
+          next_post_link( '<div class="nav-next">%link</div>', '%title' );
+          ?>
+          <br>
+      </div>
+  <div>
+  <p class="postmetadata"><?php
 		_e('Posted on <time datetime="','huhanlin');
 		echo date('Y-m-d') . '">'; 
 		the_time('Y-m-d H:i:s');
-		_e('</time> by ','huhanlin');
-		the_author_link(); 
+		/*_e('</time> by ','huhanlin');
+		the_author_link(); */
 		echo '<br />';
 		_e('Categories: ','huhanlin');
 		the_category(', '); 

@@ -739,6 +739,7 @@ img#headerlogo { margin-top: 70px;}
   overflow: hidden;
 }
 
+.posts-navigation { padding: 14px 28px;}
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -753,3 +754,4 @@ img#headerlogo { margin-top: 70px;}
   text-align: right;
   width: 50%;
 }
+
