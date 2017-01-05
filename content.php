@@ -16,6 +16,8 @@
     echo '<figure class="thumbnailsquare">';
     the_post_thumbnail('thumbnail');
     echo '</figure>';
+  }else{
+      echo  '<figure class="thumbnailsquare">'; don_the_thumbnail(); echo '</figure>';
   }
   ?>
   <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
