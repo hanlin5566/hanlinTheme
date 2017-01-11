@@ -15,6 +15,15 @@
 		?></h1>
     <?php while ( have_posts() ) : the_post(); ?>
       <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+          <?php
+          if(has_post_thumbnail()) {
+              echo '<figure class="thumbnailsquare">';
+              the_post_thumbnail('thumbnail');
+              echo '</figure>';
+          }else{
+              echo  '<figure class="thumbnailsquare">'; don_the_thumbnail(); echo '</figure>';
+          }
+          ?>
        <!-- <time datetime="' . date('Y-m-d') . '" class="datehead"><?php /*the_time('Y-m-d H:i:s'); */?></time>-->
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
         <div class="entry">

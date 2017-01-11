@@ -241,7 +241,6 @@ function post_views($before = '(click ', $after = ')', $echo = 1)
     else return $views;
 }
 
-add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 200, 200 ,true );
 function don_the_thumbnail() {
     global $post;
@@ -255,9 +254,9 @@ function don_the_thumbnail() {
         preg_match_all('/<img.*?(?: |\\t|\\r|\\n)?src=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>/sim', $content, $strResult, PREG_PATTERN_ORDER);
         $n = count($strResult[1]);
         if($n > 0){ // 如果文章内包含有图片，就用第一张图片做为缩略图
-            echo '<a href="'.get_permalink().'"><img src="'.$strResult[1][0].'" /></a>';
+            echo '<a href="'.get_permalink().'"><img src="'.$strResult[1][0].'""/></a>';
         }else { // 如果文章内没有图片，则用默认的图片。
-            //echo '<a href="'.get_permalink().'"><img src="'.get_bloginfo('template_url').'/img/thumbnail.jpg" height="200" width="200"/></a>';
+            echo '<a href="'.get_permalink().'"><img src="'.get_bloginfo('template_url').'/img/thumbnail.jpg"/></a>';
         }
     }
 }
