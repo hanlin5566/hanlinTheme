@@ -12,6 +12,7 @@
     <?php
      the_content();
 	?>
+	<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="80%" color=#987cb9 SIZE=10>
 	<div class="postcopyright">
 		<strong>©版权声明：</strong>本文为【<a href="http://www.huhanlin.com" >翰林小院</a>】（<a href="http://www.huhanlin.com" >huhanlin.com</a>）原创文章，转载时请注明出处！
 	</div>
